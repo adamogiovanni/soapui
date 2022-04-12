@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="be932d7f-159b-4123-84f6-c05eca7d8f4b" activeEnvironment="Default" name="WS Golden Fost Productivo" resourceRoot="" soapui-version="5.6.1" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="f75a5f58-82b1-4bad-8189-b1aea43dd71c" wsaVersion="NONE" name="BasicHttpBinding_IGoldenFrostService" type="wsdl" bindingName="{http://tempuri.org/}BasicHttpBinding_IGoldenFrostService" soapVersion="1_1" anonymous="optional" definition="http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc?wsdl"><con:part><con:url>http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc?wsdl</con:url><con:content><![CDATA[<wsdl:definitions name="GoldenFrostService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc?xsd=xsd0" namespace="http://tempuri.org/"/>
+      <xsd:import schemaLocation="http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+      <xsd:import schemaLocation="http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos"/>
+      <xsd:import schemaLocation="http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IGoldenFrostService_ConfirmacionRecepcionGRP_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmacionRecepcionGRP"/>
+  </wsdl:message>
+  <wsdl:message name="IGoldenFrostService_ConfirmacionRecepcionGRP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmacionRecepcionGRPResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IGoldenFrostService_ConfirmacionRecepcionGRC_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmacionRecepcionGRC"/>
+  </wsdl:message>
+  <wsdl:message name="IGoldenFrostService_ConfirmacionRecepcionGRC_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmacionRecepcionGRCResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IGoldenFrostService_ConfirmacionPedidoPreparadoPRE_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmacionPedidoPreparadoPRE"/>
+  </wsdl:message>
+  <wsdl:message name="IGoldenFrostService_ConfirmacionPedidoPreparadoPRE_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmacionPedidoPreparadoPREResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IGoldenFrostService_ConfirmacionTraspaso_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmacionTraspaso"/>
+  </wsdl:message>
+  <wsdl:message name="IGoldenFrostService_ConfirmacionTraspaso_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmacionTraspasoResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IGoldenFrostService_ConfirmacionAjuste_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmacionAjuste"/>
+  </wsdl:message>
+  <wsdl:message name="IGoldenFrostService_ConfirmacionAjuste_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmacionAjusteResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IGoldenFrostService_ConfirmacionRecepcionGDRNUTRA_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmacionRecepcionGDRNUTRA"/>
+  </wsdl:message>
+  <wsdl:message name="IGoldenFrostService_ConfirmacionRecepcionGDRNUTRA_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmacionRecepcionGDRNUTRAResponse"/>
+  </wsdl:message>
+  <wsdl:message name="IGoldenFrostService_ConfirmacionRecepcionGRPManualNutra_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmacionRecepcionGRPManualNutra"/>
+  </wsdl:message>
+  <wsdl:message name="IGoldenFrostService_ConfirmacionRecepcionGRPManualNutra_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmacionRecepcionGRPManualNutraResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="IGoldenFrostService">
+    <wsdl:operation name="ConfirmacionRecepcionGRP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGRP" message="tns:IGoldenFrostService_ConfirmacionRecepcionGRP_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGRPResponse" message="tns:IGoldenFrostService_ConfirmacionRecepcionGRP_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmacionRecepcionGRC">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGRC" message="tns:IGoldenFrostService_ConfirmacionRecepcionGRC_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGRCResponse" message="tns:IGoldenFrostService_ConfirmacionRecepcionGRC_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmacionPedidoPreparadoPRE">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGoldenFrostService/ConfirmacionPedidoPreparadoPRE" message="tns:IGoldenFrostService_ConfirmacionPedidoPreparadoPRE_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IGoldenFrostService/ConfirmacionPedidoPreparadoPREResponse" message="tns:IGoldenFrostService_ConfirmacionPedidoPreparadoPRE_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmacionTraspaso">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGoldenFrostService/ConfirmacionTraspaso" message="tns:IGoldenFrostService_ConfirmacionTraspaso_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IGoldenFrostService/ConfirmacionTraspasoResponse" message="tns:IGoldenFrostService_ConfirmacionTraspaso_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmacionAjuste">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGoldenFrostService/ConfirmacionAjuste" message="tns:IGoldenFrostService_ConfirmacionAjuste_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IGoldenFrostService/ConfirmacionAjusteResponse" message="tns:IGoldenFrostService_ConfirmacionAjuste_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmacionRecepcionGDRNUTRA">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGDRNUTRA" message="tns:IGoldenFrostService_ConfirmacionRecepcionGDRNUTRA_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGDRNUTRAResponse" message="tns:IGoldenFrostService_ConfirmacionRecepcionGDRNUTRA_OutputMessage"/>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmacionRecepcionGRPManualNutra">
+      <wsdl:input wsaw:Action="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGRPManualNutra" message="tns:IGoldenFrostService_ConfirmacionRecepcionGRPManualNutra_InputMessage"/>
+      <wsdl:output wsaw:Action="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGRPManualNutraResponse" message="tns:IGoldenFrostService_ConfirmacionRecepcionGRPManualNutra_OutputMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IGoldenFrostService" type="tns:IGoldenFrostService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ConfirmacionRecepcionGRP">
+      <soap:operation soapAction="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGRP" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmacionRecepcionGRC">
+      <soap:operation soapAction="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGRC" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmacionPedidoPreparadoPRE">
+      <soap:operation soapAction="http://tempuri.org/IGoldenFrostService/ConfirmacionPedidoPreparadoPRE" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmacionTraspaso">
+      <soap:operation soapAction="http://tempuri.org/IGoldenFrostService/ConfirmacionTraspaso" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmacionAjuste">
+      <soap:operation soapAction="http://tempuri.org/IGoldenFrostService/ConfirmacionAjuste" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmacionRecepcionGDRNUTRA">
+      <soap:operation soapAction="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGDRNUTRA" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmacionRecepcionGRPManualNutra">
+      <soap:operation soapAction="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGRPManualNutra" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="GoldenFrostService">
+    <wsdl:port name="BasicHttpBinding_IGoldenFrostService" binding="tns:BasicHttpBinding_IGoldenFrostService">
+      <soap:address location="http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc?xsd=xsd0</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://tempuri.org/">
+  <xs:import schemaLocation="http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos"/>
+  <xs:element name="ConfirmacionRecepcionGRP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grp" nillable="true" type="q1:GRP" xmlns:q1="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmacionRecepcionGRPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConfirmacionRecepcionGRPResult" nillable="true" type="q2:Respuesta" xmlns:q2="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmacionRecepcionGRC">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grc" nillable="true" type="q3:GRN" xmlns:q3="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmacionRecepcionGRCResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConfirmacionRecepcionGRCResult" nillable="true" type="q4:Respuesta" xmlns:q4="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmacionPedidoPreparadoPRE">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="pre" nillable="true" type="q5:PRE" xmlns:q5="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmacionPedidoPreparadoPREResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConfirmacionPedidoPreparadoPREResult" nillable="true" type="q6:Respuesta" xmlns:q6="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmacionTraspaso">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="traspaso" nillable="true" type="q7:Traspaso" xmlns:q7="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmacionTraspasoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConfirmacionTraspasoResult" nillable="true" type="q8:Respuesta" xmlns:q8="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmacionAjuste">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ajuste" nillable="true" type="q9:Ajuste" xmlns:q9="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmacionAjusteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConfirmacionAjusteResult" nillable="true" type="q10:Respuesta" xmlns:q10="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmacionRecepcionGDRNUTRA">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grp" nillable="true" type="q11:GDR_NUTRA" xmlns:q11="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmacionRecepcionGDRNUTRAResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConfirmacionRecepcionGDRNUTRAResult" nillable="true" type="q12:Respuesta" xmlns:q12="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmacionRecepcionGRPManualNutra">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="grp" nillable="true" type="q13:GRP_MANUAL_NUTRA" xmlns:q13="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmacionRecepcionGRPManualNutraResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConfirmacionRecepcionGRPManualNutraResult" nillable="true" type="q14:Respuesta" xmlns:q14="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc?xsd=xsd2</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos">
+  <xs:import schemaLocation="http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+  <xs:complexType name="GRP">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Carpeta_de_Importacion_Nutraline" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Fecha_recepcion" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="FolioNum" type="xs:int"/>
+      <xs:element minOccurs="0" name="FolioPref" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Hora_Recepcion" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="NRO_GRP" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Numero_Factura_de_Reserva_SAP" type="xs:int"/>
+      <xs:element minOccurs="0" name="Numero_de_Invoice" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Tipo_Transaccion" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="productos" nillable="true" type="tns:ArrayOfProducto"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GRP" nillable="true" type="tns:GRP"/>
+  <xs:complexType name="ArrayOfProducto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Producto" nillable="true" type="tns:Producto"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProducto" nillable="true" type="tns:ArrayOfProducto"/>
+  <xs:complexType name="Producto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cantidad" type="xs:int"/>
+      <xs:element minOccurs="0" name="Contrato" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Lote" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="SKU" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Vencimiento" type="xs:dateTime"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Producto" nillable="true" type="tns:Producto"/>
+  <xs:complexType name="Respuesta">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="listaErrores" nillable="true" type="q1:ArrayOfint" xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays"/>
+      <xs:element minOccurs="0" name="respuesta" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Respuesta" nillable="true" type="tns:Respuesta"/>
+  <xs:complexType name="GRN">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Fecha_recepcion" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="FolioNum" type="xs:int"/>
+      <xs:element minOccurs="0" name="FolioPref" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Hora_Recepcion" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="NRO_GRP" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Numero_Orden_de_Compra_SAP" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Numero_Pedido_SAP" type="xs:int"/>
+      <xs:element minOccurs="0" name="Numero_documento" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Secuencia_Pedido_Nacional" type="xs:int"/>
+      <xs:element minOccurs="0" name="Tipo_Transaccion" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Tipo_documento_recepcion" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="productos" nillable="true" type="tns:ArrayOfProducto"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GRN" nillable="true" type="tns:GRN"/>
+  <xs:complexType name="PRE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Contador_Productos" type="xs:int"/>
+      <xs:element minOccurs="0" name="Folio_de_Pedido_GOLDENFROST" type="xs:int"/>
+      <xs:element minOccurs="0" name="Numero_Pedido_SAP" type="xs:int"/>
+      <xs:element minOccurs="0" name="Tipo_Transaccion" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="productos" nillable="true" type="tns:ArrayOfProducto"/>
+      <xs:element minOccurs="0" name="productosPRE" nillable="true" type="tns:ArrayOfProductoPRE"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PRE" nillable="true" type="tns:PRE"/>
+  <xs:complexType name="ArrayOfProductoPRE">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProductoPRE" nillable="true" type="tns:ProductoPRE"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProductoPRE" nillable="true" type="tns:ArrayOfProductoPRE"/>
+  <xs:complexType name="ProductoPRE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cantidad" type="xs:int"/>
+      <xs:element minOccurs="0" name="Contrato" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Lote" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="SKU" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Vencimiento" type="xs:dateTime"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductoPRE" nillable="true" type="tns:ProductoPRE"/>
+  <xs:complexType name="Traspaso">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cantidad" type="xs:int"/>
+      <xs:element minOccurs="0" name="Contrato_Nuevo" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Contrato_actual" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Estado_Nuevo" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Fecha_Transaccion" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="Folio_Golden_Frost" type="xs:int"/>
+      <xs:element minOccurs="0" name="Lote" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Lote_Nuevo" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Pallet" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Sku" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Sku_Nuevo" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="UxC" type="xs:decimal"/>
+      <xs:element minOccurs="0" name="UxC_nuevo" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Traspaso" nillable="true" type="tns:Traspaso"/>
+  <xs:complexType name="Ajuste">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cantidad" type="xs:int"/>
+      <xs:element minOccurs="0" name="Codigo_cliente" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Codigo_motivo" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Contrato_actual" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Estado" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Expiracion_lote" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Fecha_Transaccion" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="Folio_Golden_Frost" type="xs:int"/>
+      <xs:element minOccurs="0" name="Lote" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Motivo" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Sku_GF" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Tipo_movimiento" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Ajuste" nillable="true" type="tns:Ajuste"/>
+  <xs:complexType name="GDR_NUTRA">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DOCNUM" type="xs:int"/>
+      <xs:element minOccurs="0" name="ESTADO" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="FECHA_HORA" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="FECHA_RUTA" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="NRO_GDR" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="NUMERO_PEDIDO" type="xs:int"/>
+      <xs:element minOccurs="0" name="OBSERVACIONES_NUTRA" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Productos" nillable="true" type="tns:ArrayOfPRODUCTO_GDR_NUTRA"/>
+      <xs:element minOccurs="0" name="TIPO_TRANSACCION" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GDR_NUTRA" nillable="true" type="tns:GDR_NUTRA"/>
+  <xs:complexType name="ArrayOfPRODUCTO_GDR_NUTRA">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PRODUCTO_GDR_NUTRA" nillable="true" type="tns:PRODUCTO_GDR_NUTRA"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPRODUCTO_GDR_NUTRA" nillable="true" type="tns:ArrayOfPRODUCTO_GDR_NUTRA"/>
+  <xs:complexType name="PRODUCTO_GDR_NUTRA">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cantidad" type="xs:int"/>
+      <xs:element minOccurs="0" name="Contrato" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Lote" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="SKU" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="SKU_Golden" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Vencimiento" type="xs:dateTime"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PRODUCTO_GDR_NUTRA" nillable="true" type="tns:PRODUCTO_GDR_NUTRA"/>
+  <xs:complexType name="GRP_MANUAL_NUTRA">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FECHA_DOC_RECEPCION" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="FECHA_RECEPCION" type="xs:dateTime"/>
+      <xs:element minOccurs="0" name="FOLIO_GRP" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="HORA_RECEPCION" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="NUMERO_DOC_RECEPCION" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="OBSERVACIONES" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Productos" nillable="true" type="tns:ArrayOfPRODUCTO_GRP_MANUAL"/>
+      <xs:element minOccurs="0" name="TIPO_DOC_RECEPCION" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="TIPO_TRANSACCION" nillable="true" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GRP_MANUAL_NUTRA" nillable="true" type="tns:GRP_MANUAL_NUTRA"/>
+  <xs:complexType name="ArrayOfPRODUCTO_GRP_MANUAL">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PRODUCTO_GRP_MANUAL" nillable="true" type="tns:PRODUCTO_GRP_MANUAL"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPRODUCTO_GRP_MANUAL" nillable="true" type="tns:ArrayOfPRODUCTO_GRP_MANUAL"/>
+  <xs:complexType name="PRODUCTO_GRP_MANUAL">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cantidad" type="xs:int"/>
+      <xs:element minOccurs="0" name="Contrato" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Lote" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="SKU" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="SKU_Golden" nillable="true" type="xs:string"/>
+      <xs:element minOccurs="0" name="Vencimiento" type="xs:dateTime"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PRODUCTO_GRP_MANUAL" nillable="true" type="tns:PRODUCTO_GRP_MANUAL"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc?xsd=xsd3</con:url><con:content><![CDATA[<xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+  <xs:complexType name="ArrayOfint">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="int" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfint" nillable="true" type="tns:ArrayOfint"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc?xsd=xsd1</con:url><con:content><![CDATA[<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+  <xs:element name="anyType" nillable="true" type="xs:anyType"/>
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI"/>
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary"/>
+  <xs:element name="boolean" nillable="true" type="xs:boolean"/>
+  <xs:element name="byte" nillable="true" type="xs:byte"/>
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime"/>
+  <xs:element name="decimal" nillable="true" type="xs:decimal"/>
+  <xs:element name="double" nillable="true" type="xs:double"/>
+  <xs:element name="float" nillable="true" type="xs:float"/>
+  <xs:element name="int" nillable="true" type="xs:int"/>
+  <xs:element name="long" nillable="true" type="xs:long"/>
+  <xs:element name="QName" nillable="true" type="xs:QName"/>
+  <xs:element name="short" nillable="true" type="xs:short"/>
+  <xs:element name="string" nillable="true" type="xs:string"/>
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte"/>
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt"/>
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong"/>
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort"/>
+  <xs:element name="char" nillable="true" type="tns:char"/>
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int"/>
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration"/>
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?"/>
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S"/>
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid"/>
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName"/>
+  <xs:attribute name="Id" type="xs:ID"/>
+  <xs:attribute name="Ref" type="xs:IDREF"/>
+</xs:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc</con:endpoint></con:endpoints><con:operation id="ca692de4-d710-40b0-a8ae-776e9a5ee4e0" isOneWay="false" action="http://tempuri.org/IGoldenFrostService/ConfirmacionAjuste" name="ConfirmacionAjuste" bindingOperationName="ConfirmacionAjuste" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f7ece2f1-8519-4915-aa49-7ff8cf47549b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:nl="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <tem:ConfirmacionAjuste>
+         <!--Optional:-->
+         <tem:ajuste>
+            <!--Optional:-->
+            <nl:Cantidad>2</nl:Cantidad>
+            <!--Optional:-->
+            <nl:Codigo_cliente>S205001-600G-0</nl:Codigo_cliente>
+            <!--Optional:-->
+            <nl:Codigo_motivo>DAGFC</nl:Codigo_motivo>
+            <!--Optional:-->
+            <nl:Contrato_actual>1049</nl:Contrato_actual>
+            <!--Optional:-->
+            <nl:Estado>DIS</nl:Estado>
+            <!--Optional:-->
+            <nl:Expiracion_lote>2024-07-01T16:42:16.717</nl:Expiracion_lote>
+            <!--Optional:-->
+            <nl:Fecha_Transaccion>2022-03-01T18:12:16.717</nl:Fecha_Transaccion>
+            <!--Optional:-->
+            <nl:Folio_Golden_Frost>4708825</nl:Folio_Golden_Frost>
+            <!--Optional:-->
+            <nl:Lote>KSSP2021070201</nl:Lote>
+            <!--Optional:-->
+            <nl:Motivo>Por producto abollado en la base, detectado en proceso de picking del 14-02-2022</nl:Motivo>
+            <!--Optional:-->
+            <nl:Sku_GF>NUT170609</nl:Sku_GF>
+            <!--Optional:-->
+            <nl:Tipo_movimiento>S</nl:Tipo_movimiento>
+         </tem:ajuste>
+      </tem:ConfirmacionAjuste>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IGoldenFrostService/ConfirmacionAjuste"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="62e5936a-b841-4e90-94d6-72c3033fcd25" isOneWay="false" action="http://tempuri.org/IGoldenFrostService/ConfirmacionPedidoPreparadoPRE" name="ConfirmacionPedidoPreparadoPRE" bindingOperationName="ConfirmacionPedidoPreparadoPRE" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ed307d50-b464-4ebd-97b5-f41b0db848dd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:nl="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ConfirmacionPedidoPreparadoPRE>\r
+         <!--Optional:-->\r
+         <tem:pre>\r
+            <!--Optional:-->\r
+            <nl:Contador_Productos>?</nl:Contador_Productos>\r
+            <!--Optional:-->\r
+            <nl:Folio_de_Pedido_GOLDENFROST>?</nl:Folio_de_Pedido_GOLDENFROST>\r
+            <!--Optional:-->\r
+            <nl:Numero_Pedido_SAP>?</nl:Numero_Pedido_SAP>\r
+            <!--Optional:-->\r
+            <nl:Tipo_Transaccion>?</nl:Tipo_Transaccion>\r
+            <!--Optional:-->\r
+            <nl:productos>\r
+               <!--Zero or more repetitions:-->\r
+               <nl:Producto>\r
+                  <!--Optional:-->\r
+                  <nl:Cantidad>?</nl:Cantidad>\r
+                  <!--Optional:-->\r
+                  <nl:Contrato>?</nl:Contrato>\r
+                  <!--Optional:-->\r
+                  <nl:Estado>?</nl:Estado>\r
+                  <!--Optional:-->\r
+                  <nl:Lote>?</nl:Lote>\r
+                  <!--Optional:-->\r
+                  <nl:SKU>?</nl:SKU>\r
+                  <!--Optional:-->\r
+                  <nl:Vencimiento>?</nl:Vencimiento>\r
+               </nl:Producto>\r
+            </nl:productos>\r
+            <!--Optional:-->\r
+            <nl:productosPRE>\r
+               <!--Zero or more repetitions:-->\r
+               <nl:ProductoPRE>\r
+                  <!--Optional:-->\r
+                  <nl:Cantidad>?</nl:Cantidad>\r
+                  <!--Optional:-->\r
+                  <nl:Contrato>?</nl:Contrato>\r
+                  <!--Optional:-->\r
+                  <nl:Estado>?</nl:Estado>\r
+                  <!--Optional:-->\r
+                  <nl:Lote>?</nl:Lote>\r
+                  <!--Optional:-->\r
+                  <nl:SKU>?</nl:SKU>\r
+                  <!--Optional:-->\r
+                  <nl:Vencimiento>?</nl:Vencimiento>\r
+               </nl:ProductoPRE>\r
+            </nl:productosPRE>\r
+         </tem:pre>\r
+      </tem:ConfirmacionPedidoPreparadoPRE>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IGoldenFrostService/ConfirmacionPedidoPreparadoPRE"/></con:call></con:operation><con:operation id="7fd43bbe-2126-444b-a040-39174f3873b8" isOneWay="false" action="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGDRNUTRA" name="ConfirmacionRecepcionGDRNUTRA" bindingOperationName="ConfirmacionRecepcionGDRNUTRA" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cf9c67b3-da61-4a7c-9b6d-89ad37a71346" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:nl="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ConfirmacionRecepcionGDRNUTRA>\r
+         <!--Optional:-->\r
+         <tem:grp>\r
+            <!--Optional:-->\r
+            <nl:DOCNUM>?</nl:DOCNUM>\r
+            <!--Optional:-->\r
+            <nl:ESTADO>?</nl:ESTADO>\r
+            <!--Optional:-->\r
+            <nl:FECHA_HORA>?</nl:FECHA_HORA>\r
+            <!--Optional:-->\r
+            <nl:FECHA_RUTA>?</nl:FECHA_RUTA>\r
+            <!--Optional:-->\r
+            <nl:NRO_GDR>?</nl:NRO_GDR>\r
+            <!--Optional:-->\r
+            <nl:NUMERO_PEDIDO>?</nl:NUMERO_PEDIDO>\r
+            <!--Optional:-->\r
+            <nl:OBSERVACIONES_NUTRA>?</nl:OBSERVACIONES_NUTRA>\r
+            <!--Optional:-->\r
+            <nl:Productos>\r
+               <!--Zero or more repetitions:-->\r
+               <nl:PRODUCTO_GDR_NUTRA>\r
+                  <!--Optional:-->\r
+                  <nl:Cantidad>?</nl:Cantidad>\r
+                  <!--Optional:-->\r
+                  <nl:Contrato>?</nl:Contrato>\r
+                  <!--Optional:-->\r
+                  <nl:Lote>?</nl:Lote>\r
+                  <!--Optional:-->\r
+                  <nl:SKU>?</nl:SKU>\r
+                  <!--Optional:-->\r
+                  <nl:SKU_Golden>?</nl:SKU_Golden>\r
+                  <!--Optional:-->\r
+                  <nl:Vencimiento>?</nl:Vencimiento>\r
+               </nl:PRODUCTO_GDR_NUTRA>\r
+            </nl:Productos>\r
+            <!--Optional:-->\r
+            <nl:TIPO_TRANSACCION>?</nl:TIPO_TRANSACCION>\r
+         </tem:grp>\r
+      </tem:ConfirmacionRecepcionGDRNUTRA>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGDRNUTRA"/></con:call></con:operation><con:operation id="6796ad1b-9257-4b3e-b5e0-da55f88ad923" isOneWay="false" action="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGRC" name="ConfirmacionRecepcionGRC" bindingOperationName="ConfirmacionRecepcionGRC" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="ff0d2056-a7da-42d3-84de-634abcf8b394" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:nl="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ConfirmacionRecepcionGRC>\r
+         <!--Optional:-->\r
+         <tem:grc>\r
+            <!--Optional:-->\r
+            <nl:Fecha_recepcion>?</nl:Fecha_recepcion>\r
+            <!--Optional:-->\r
+            <nl:FolioNum>?</nl:FolioNum>\r
+            <!--Optional:-->\r
+            <nl:FolioPref>?</nl:FolioPref>\r
+            <!--Optional:-->\r
+            <nl:Hora_Recepcion>?</nl:Hora_Recepcion>\r
+            <!--Optional:-->\r
+            <nl:NRO_GRP>?</nl:NRO_GRP>\r
+            <!--Optional:-->\r
+            <nl:Numero_Orden_de_Compra_SAP>?</nl:Numero_Orden_de_Compra_SAP>\r
+            <!--Optional:-->\r
+            <nl:Numero_Pedido_SAP>?</nl:Numero_Pedido_SAP>\r
+            <!--Optional:-->\r
+            <nl:Numero_documento>?</nl:Numero_documento>\r
+            <!--Optional:-->\r
+            <nl:Secuencia_Pedido_Nacional>?</nl:Secuencia_Pedido_Nacional>\r
+            <!--Optional:-->\r
+            <nl:Tipo_Transaccion>?</nl:Tipo_Transaccion>\r
+            <!--Optional:-->\r
+            <nl:Tipo_documento_recepcion>?</nl:Tipo_documento_recepcion>\r
+            <!--Optional:-->\r
+            <nl:productos>\r
+               <!--Zero or more repetitions:-->\r
+               <nl:Producto>\r
+                  <!--Optional:-->\r
+                  <nl:Cantidad>?</nl:Cantidad>\r
+                  <!--Optional:-->\r
+                  <nl:Contrato>?</nl:Contrato>\r
+                  <!--Optional:-->\r
+                  <nl:Estado>?</nl:Estado>\r
+                  <!--Optional:-->\r
+                  <nl:Lote>?</nl:Lote>\r
+                  <!--Optional:-->\r
+                  <nl:SKU>?</nl:SKU>\r
+                  <!--Optional:-->\r
+                  <nl:Vencimiento>?</nl:Vencimiento>\r
+               </nl:Producto>\r
+            </nl:productos>\r
+         </tem:grc>\r
+      </tem:ConfirmacionRecepcionGRC>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGRC"/></con:call></con:operation><con:operation id="30746867-8ce7-4c81-91be-e8a346e4348c" isOneWay="false" action="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGRP" name="ConfirmacionRecepcionGRP" bindingOperationName="ConfirmacionRecepcionGRP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="df2a9db4-39a3-4707-80ae-0da13bca87b0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:nl="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ConfirmacionRecepcionGRP>\r
+         <!--Optional:-->\r
+         <tem:grp>\r
+            <!--Optional:-->\r
+            <nl:Carpeta_de_Importacion_Nutraline>?</nl:Carpeta_de_Importacion_Nutraline>\r
+            <!--Optional:-->\r
+            <nl:Fecha_recepcion>?</nl:Fecha_recepcion>\r
+            <!--Optional:-->\r
+            <nl:FolioNum>?</nl:FolioNum>\r
+            <!--Optional:-->\r
+            <nl:FolioPref>?</nl:FolioPref>\r
+            <!--Optional:-->\r
+            <nl:Hora_Recepcion>?</nl:Hora_Recepcion>\r
+            <!--Optional:-->\r
+            <nl:NRO_GRP>?</nl:NRO_GRP>\r
+            <!--Optional:-->\r
+            <nl:Numero_Factura_de_Reserva_SAP>?</nl:Numero_Factura_de_Reserva_SAP>\r
+            <!--Optional:-->\r
+            <nl:Numero_de_Invoice>?</nl:Numero_de_Invoice>\r
+            <!--Optional:-->\r
+            <nl:Tipo_Transaccion>?</nl:Tipo_Transaccion>\r
+            <!--Optional:-->\r
+            <nl:productos>\r
+               <!--Zero or more repetitions:-->\r
+               <nl:Producto>\r
+                  <!--Optional:-->\r
+                  <nl:Cantidad>?</nl:Cantidad>\r
+                  <!--Optional:-->\r
+                  <nl:Contrato>?</nl:Contrato>\r
+                  <!--Optional:-->\r
+                  <nl:Estado>?</nl:Estado>\r
+                  <!--Optional:-->\r
+                  <nl:Lote>?</nl:Lote>\r
+                  <!--Optional:-->\r
+                  <nl:SKU>?</nl:SKU>\r
+                  <!--Optional:-->\r
+                  <nl:Vencimiento>?</nl:Vencimiento>\r
+               </nl:Producto>\r
+            </nl:productos>\r
+         </tem:grp>\r
+      </tem:ConfirmacionRecepcionGRP>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGRP"/></con:call></con:operation><con:operation id="6b1a485b-fbeb-4e0e-8e63-8159baba3721" isOneWay="false" action="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGRPManualNutra" name="ConfirmacionRecepcionGRPManualNutra" bindingOperationName="ConfirmacionRecepcionGRPManualNutra" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="09de40d0-fc77-4597-bcdb-1eece20c4165" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:nl="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ConfirmacionRecepcionGRPManualNutra>\r
+         <!--Optional:-->\r
+         <tem:grp>\r
+            <!--Optional:-->\r
+            <nl:FECHA_DOC_RECEPCION>?</nl:FECHA_DOC_RECEPCION>\r
+            <!--Optional:-->\r
+            <nl:FECHA_RECEPCION>?</nl:FECHA_RECEPCION>\r
+            <!--Optional:-->\r
+            <nl:FOLIO_GRP>?</nl:FOLIO_GRP>\r
+            <!--Optional:-->\r
+            <nl:HORA_RECEPCION>?</nl:HORA_RECEPCION>\r
+            <!--Optional:-->\r
+            <nl:NUMERO_DOC_RECEPCION>?</nl:NUMERO_DOC_RECEPCION>\r
+            <!--Optional:-->\r
+            <nl:OBSERVACIONES>?</nl:OBSERVACIONES>\r
+            <!--Optional:-->\r
+            <nl:Productos>\r
+               <!--Zero or more repetitions:-->\r
+               <nl:PRODUCTO_GRP_MANUAL>\r
+                  <!--Optional:-->\r
+                  <nl:Cantidad>?</nl:Cantidad>\r
+                  <!--Optional:-->\r
+                  <nl:Contrato>?</nl:Contrato>\r
+                  <!--Optional:-->\r
+                  <nl:Lote>?</nl:Lote>\r
+                  <!--Optional:-->\r
+                  <nl:SKU>?</nl:SKU>\r
+                  <!--Optional:-->\r
+                  <nl:SKU_Golden>?</nl:SKU_Golden>\r
+                  <!--Optional:-->\r
+                  <nl:Vencimiento>?</nl:Vencimiento>\r
+               </nl:PRODUCTO_GRP_MANUAL>\r
+            </nl:Productos>\r
+            <!--Optional:-->\r
+            <nl:TIPO_DOC_RECEPCION>?</nl:TIPO_DOC_RECEPCION>\r
+            <!--Optional:-->\r
+            <nl:TIPO_TRANSACCION>?</nl:TIPO_TRANSACCION>\r
+         </tem:grp>\r
+      </tem:ConfirmacionRecepcionGRPManualNutra>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IGoldenFrostService/ConfirmacionRecepcionGRPManualNutra"/></con:call></con:operation><con:operation id="174c9221-12c4-4710-856d-9f5497b5d53f" isOneWay="false" action="http://tempuri.org/IGoldenFrostService/ConfirmacionTraspaso" name="ConfirmacionTraspaso" bindingOperationName="ConfirmacionTraspaso" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e4e151b6-2e8b-4567-a3b5-efbfdf703cd0" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://192.168.100.9/GoldenFrostService/GoldenFrostService.svc</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:nl="http://schemas.datacontract.org/2004/07/NL.Servicio.Internos">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <tem:ConfirmacionTraspaso>\r
+         <!--Optional:-->\r
+         <tem:traspaso>\r
+            <!--Optional:-->\r
+            <nl:Cantidad>?</nl:Cantidad>\r
+            <!--Optional:-->\r
+            <nl:Contrato_Nuevo>?</nl:Contrato_Nuevo>\r
+            <!--Optional:-->\r
+            <nl:Contrato_actual>?</nl:Contrato_actual>\r
+            <!--Optional:-->\r
+            <nl:Estado>?</nl:Estado>\r
+            <!--Optional:-->\r
+            <nl:Estado_Nuevo>?</nl:Estado_Nuevo>\r
+            <!--Optional:-->\r
+            <nl:Fecha_Transaccion>?</nl:Fecha_Transaccion>\r
+            <!--Optional:-->\r
+            <nl:Folio_Golden_Frost>?</nl:Folio_Golden_Frost>\r
+            <!--Optional:-->\r
+            <nl:Lote>?</nl:Lote>\r
+            <!--Optional:-->\r
+            <nl:Lote_Nuevo>?</nl:Lote_Nuevo>\r
+            <!--Optional:-->\r
+            <nl:Pallet>?</nl:Pallet>\r
+            <!--Optional:-->\r
+            <nl:Sku>?</nl:Sku>\r
+            <!--Optional:-->\r
+            <nl:Sku_Nuevo>?</nl:Sku_Nuevo>\r
+            <!--Optional:-->\r
+            <nl:UxC>?</nl:UxC>\r
+            <!--Optional:-->\r
+            <nl:UxC_nuevo>?</nl:UxC_nuevo>\r
+         </tem:traspaso>\r
+      </tem:ConfirmacionTraspaso>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/IGoldenFrostService/ConfirmacionTraspaso"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
